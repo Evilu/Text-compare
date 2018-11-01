@@ -1,6 +1,7 @@
 const audio = new Audio('data/effect.mp3');
 
 function compare() {
+
     let string1 = document.getElementById("first").value;
 
     let string2 = document.getElementById("second").value;
@@ -42,6 +43,8 @@ function compare() {
 }
 
 function previous (){
+
+    document.getElementById("compareButton").disabled = true;
 
     document.getElementById("aqa").style.display =
         "block";
